@@ -1,0 +1,130 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.mySliders{ /* este slider lo saqué de esta página, le cambie un par de cosas para que se adapte a mi web, aca les dejo el link. Lo mismo con el resto de modificaciones de css
+   https://editor.p5js.org/amygoodchild/sketches/6bWwRNyVB  */
+  width: 120px;
+  background-color: transparent;
+  
+  /* Removes some defaults */
+  -webkit-appearance: none;
+}
+/* These styles affect what happens when the cursor is focused on the slider (i.e. clicking it) */
+.mySliders:focus {
+  
+  /* Stops the default outline showing up */
+  outline: none;
+}
+
+/* This is the "track" that the slider sits on  */
+.mySliders::-webkit-slider-runnable-track {
+  background: #ffffff;
+  height: 3px;
+  -webkit-appearance: none;
+  
+  /* Turns the cursor into the hand pointer icon when hovering over the slider  */
+  cursor: pointer;
+  
+}
+
+/* This is the moveable bit of the slider, known as the "thumb"*/
+.mySliders::-webkit-slider-thumb {
+  width: 30px;
+  height: 15px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  
+  /* negative top padding moves it up */
+  margin-top: -6px;
+
+  
+  /* Border radius gives rounded corners, if they're big enough, you end up with circles */
+  border-radius: 8px;
+  
+}
+
+
+/* Para estos css use chatgpt, para que me haga las plantillas porque yo no las se hacer y queria que quede bueno y yo despues los fui adaptando a lo que yo queria*/
+input[type="color"] {
+  -webkit-appearance: none;
+  border: none;
+  width: 100px;        /* ancho más alargado */
+  height:20px;        /* altura más baja */
+  cursor: pointer;
+  background: none;
+  border-radius: 0px;  /* esquinas levemente redondeadas */
+  outline: 1px solid white; /* borde blanco muy fino */
+  padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 2px;
+}
+
+
+
+
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 2px;
+  padding: 8px 22px;
+  font-size: 15px;
+  font-family: bold;
+  cursor: pointer;
+  width: 120px;
+  height: 40px;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+/* Opcional: flechita minimalista propia */
+select::after {
+  content: '▼';
+  color: white;
+  position: absolute;
+  right: 10px;
+  pointer-events: none;
+}
+
+/* Opciones */
+select option {
+  background-color: black;
+  color: white;
+}
+
+
+
+
+
+.minimalTextarea {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 2px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: bold;
+  resize: none;
+  width: 200px;
+  height: 100px;
+  outline: none;
+  box-sizing: border-box;
+}
